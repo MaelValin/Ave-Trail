@@ -1,0 +1,51 @@
+# ===================================
+# Fichier .gitignore pour Unity
+# ===================================
+
+# === Unity généré automatiquement ===
+[Lignes essentielles pour Unity]
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+MemoryCaptures/
+UserSettings/
+.burst/
+*.bak
+*.tmp
+
+# === VS Code / Visual Studio ===
+.vscode/
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+
+# === OS / Environnement ===
+.DS_Store
+Thumbs.db
+
+# === Burst Compiler Debug ===
+*_BurstDebugInformation_DoNotShip/
+
+# === Unity Cache ===
+*.pidb
+*.booproj
+*.svd
+
+# === JetBrains Rider ===
+.idea/
+*.sln.iml
+
+# === Crash Logs ===
+sysinfo.txt
+
+# === Build export folders ===
+build/
+builds/
+buildMac/
