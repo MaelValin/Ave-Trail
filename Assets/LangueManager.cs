@@ -143,6 +143,11 @@ public class LangueManager : MonoBehaviour
 
     void Awake()    
     {
+        #if UNITY_WEBGL
+            // Désactive le script si on est en WebGL
+            this.enabled = false;
+            return;
+        #endif
         var parametreMenus=parametreMenu.instance;
         indexLangue = PlayerPrefs.GetInt("index", 0);
         if(parametreMenus !=null && parametreMenus.dropdownLangue != null)
