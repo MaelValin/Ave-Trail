@@ -3,6 +3,10 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine.SceneManagement;
+using System.Collections;
+#if UNITY_WEBGL && !UNITY_EDITOR
+using UnityEngine.Networking;
+#endif
 
 
 public class LangueManager : MonoBehaviour
@@ -155,9 +159,11 @@ public class LangueManager : MonoBehaviour
         
 
         instance = this;
-        ChargerLangue(langueFichier);
-        InitializeTexts();
+        StartCoroutine(LoadJSON(langueFichier));
     }
+
+
+    
 
 
     public void adapteLangue(int index){
@@ -176,9 +182,46 @@ public class LangueManager : MonoBehaviour
     public void ChangerLangue(string nouveauFichier)
     {
         langueFichier = nouveauFichier;
-        ChargerLangue(langueFichier);
-        InitializeTexts();
+        StartCoroutine(LoadJSON(langueFichier));
     }
+
+
+    IEnumerator LoadJSON(string filename)
+    {
+        string path = Path.Combine(Application.streamingAssetsPath, filename);
+
+    #if UNITY_WEBGL && !UNITY_EDITOR
+        UnityWebRequest www = UnityWebRequest.Get(path);
+        yield return www.SendWebRequest();
+
+        if (www.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError($"{filename} non trouvé !");
+            yield break;
+        }
+        else
+        {
+            string jsonText = www.downloadHandler.text;
+            textes = JsonUtility.FromJson<TextesJeu>(jsonText);
+            InitializeTexts();
+            yield break;
+        }
+    #else
+        if (File.Exists(path))
+        {
+            string jsonText = File.ReadAllText(path);
+            textes = JsonUtility.FromJson<TextesJeu>(jsonText);
+            InitializeTexts();
+            yield break;
+        }
+        else
+        {
+            Debug.LogError($"{filename} non trouvé !");
+            yield break;
+        }
+    #endif
+    }
+
 
      void ChargerLangue(string fichier)
     {
