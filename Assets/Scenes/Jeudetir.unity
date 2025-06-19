@@ -964,8 +964,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Vous avez \xE9t\xE9 ramener au village et vous avez perdu les ressources
-    recuperer"
+  m_Text: "Vous avez \xE9t\xE9 ramen\xE9 au village et vous avez perdu les ressources
+    r\xE9cup\xE9r\xE9es"
 --- !u!222 &632231565
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2554,7 +2554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 212781997357212547, guid: 6af3dd31c5336f8418df1d1226d52f98, type: 3}
       propertyPath: m_Text
-      value: "Vous avez \xE9t\xE9 mis a terre"
+      value: "Vous avez \xE9t\xE9 mis \xE0 terre"
       objectReference: {fileID: 0}
     - target: {fileID: 548545236348475338, guid: 6af3dd31c5336f8418df1d1226d52f98, type: 3}
       propertyPath: m_IsActive
@@ -2639,6 +2639,10 @@ PrefabInstance:
     - target: {fileID: 4601233873293342411, guid: 6af3dd31c5336f8418df1d1226d52f98, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547963122103175961, guid: 6af3dd31c5336f8418df1d1226d52f98, type: 3}
+      propertyPath: m_Text
+      value: "Param\xE8tres"
       objectReference: {fileID: 0}
     - target: {fileID: 6861084937441311256, guid: 6af3dd31c5336f8418df1d1226d52f98, type: 3}
       propertyPath: m_Value

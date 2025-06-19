@@ -710,7 +710,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Le typie, vous aide a vous entrainer, et vous pourrez allez plus vite
+  m_Text: "Le typie vous aide \xE0 vous entra\xEEner, et vous pourrez aller plus
+    vite"
 --- !u!222 &40996371
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2842,11 +2843,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.05
-  m_Text: "Vous etes sortie et avez commencer a administrer le vaccin au plus de
-    zombie possible, maintenant quand un zombie mord une personne vaccinner, sa le
-    vaccinne a sont tours. En m\xEAme pas quelques mois l'apocalypse \xE9tait finie,
-    la terre \xE9tait sauver grace a vous.\nVous decider de partir et de voir du
-    pays."
+  m_Text: "Vous \xEAtes sorti et avez commenc\xE9 \xE0 administrer le vaccin au plus
+    de zombies possible. Maintenant, quand un zombie mord une personne vaccin\xE9e,
+    \xE7a la vaccine \xE0 son tour. En m\xEAme pas quelques mois, l'apocalypse \xE9tait
+    finie, la Terre \xE9tait sauv\xE9e gr\xE2ce \xE0 vous.\\nVous d\xE9cidez de partir
+    et de voir du pays."
 --- !u!222 &155643369
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3591,7 +3592,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: La cabane, vous aide a inventer de nouvelle balles pour mieux vous defendre.
+  m_Text: "La cabane vous aide \xE0 inventer de nouvelles balles pour mieux vous
+    d\xE9fendre."
 --- !u!222 &175848209
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13983,8 +13985,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Dans le garage am\xE9liorer le v\xE9hicul pour qu'il vous aident dans
-    vos mission"
+  m_Text: "Dans le garage, am\xE9liorez le v\xE9hicule pour qu'il vous aide dans
+    vos missions"
 --- !u!222 &1010904685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27767,7 +27769,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: La Maison, vous aident a vous reposer et a apprendre a recharger plus vite.
+  m_Text: "La maison vous aide \xE0 vous reposer et \xE0 apprendre \xE0 recharger
+    plus vite."
 --- !u!222 &1936040645
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29753,8 +29756,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Le local stockent vos differentes armures et vous permez d'\xEAtre mieux
-    proteger."
+  m_Text: "Le local stocke vos diff\xE9rentes armures et vous permet d'\xEAtre mieux
+    prot\xE9g\xE9."
 --- !u!222 &2080427361
 CanvasRenderer:
   m_ObjectHideFlags: 0

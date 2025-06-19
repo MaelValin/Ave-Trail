@@ -1091,7 +1091,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7111351060761093733, guid: 6b75ecaba88d1da438a4b2e5458efa4f, type: 3}
       propertyPath: m_Text
-      value: Start
+      value: Commencer
       objectReference: {fileID: 0}
     - target: {fileID: 7305376889494244019, guid: 6b75ecaba88d1da438a4b2e5458efa4f, type: 3}
       propertyPath: m_Name
@@ -2411,10 +2411,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.05
-  m_Text: "C'est l'apocalypse zombie la dehors, prenez garde, vous venez de  trouver
-    un village abandonnez, mais avec un peu de mat\xE9riaux, d'argent et de nourriture,
-    vous pourrez peut etre reussir a trouver un vaccin contre le zombiesse, am\xE9liorer
-    vos maison et partez en mission recuperer des ressources."
+  m_Text: "C'est l'apocalypse zombie l\xE0-dehors, prenez garde. Vous venez de trouver
+    un village abandonn\xE9, mais avec un peu de mat\xE9riaux, d'argent et de nourriture,
+    vous pourrez peut-\xEAtre r\xE9ussir \xE0 trouver un vaccin contre le zombiesme,
+    am\xE9liorer vos maisons et partir en mission r\xE9cup\xE9rer des ressources."
 --- !u!222 &1409341358
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2546,7 +2546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7111351060761093733, guid: 6b75ecaba88d1da438a4b2e5458efa4f, type: 3}
       propertyPath: m_Text
-      value: "Param\xE8tre"
+      value: "Param\xE8tres"
       objectReference: {fileID: 0}
     - target: {fileID: 7305376889494244019, guid: 6b75ecaba88d1da438a4b2e5458efa4f, type: 3}
       propertyPath: m_Name
@@ -3181,6 +3181,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3938682291511051403, guid: f480401264e8dc642963cbc515ddcb9c, type: 3}
+      propertyPath: m_Text
+      value: Quitter le jeu
+      objectReference: {fileID: 0}
     - target: {fileID: 4080084186315141786, guid: f480401264e8dc642963cbc515ddcb9c, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.6
@@ -3229,6 +3233,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 372321576}
+    - target: {fileID: 6241783371571444343, guid: f480401264e8dc642963cbc515ddcb9c, type: 3}
+      propertyPath: m_Text
+      value: "Effacer les donn\xE9es"
+      objectReference: {fileID: 0}
     - target: {fileID: 6373432680161001033, guid: f480401264e8dc642963cbc515ddcb9c, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
