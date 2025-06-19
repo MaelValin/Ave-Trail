@@ -46,6 +46,6 @@ Thumbs.db
 sysinfo.txt
 
 # === Build export folders ===
-build/
+
 builds/
 buildMac/
