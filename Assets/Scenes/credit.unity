@@ -501,10 +501,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<SIZE=80>Ave Trail</SIZE>\nCREER PAR Aaron walker\n\n\n\n\n<SIZE=120>ASSETS</SIZE>\n\n<SIZE=80>-GRAPHICS-</SIZE>\nDesign
-    Decor, voiture & characteres\npar Aaron walker\n\n\n\n<SIZE=80>-AUDIO-</SIZE>\n\nMusic
+  m_Text: "<SIZE=80>Ave Trail</SIZE>\nCREER PAR Ma\xEBl Valin\n\n\n\n\n<SIZE=120>ASSETS</SIZE>\n\n<SIZE=80>-GRAPHICS-</SIZE>\nDesign
+    Decor, voiture & characteres\npar Ma\xEBl Valin\n\n\n\n<SIZE=80>-AUDIO-</SIZE>\n\nMusic
     du village, de la prairie, de la ville et du bunker\npar Laisn\xE9 Vissak\n\nEffect
-    character & monster\npar Aaron Walker\n\nEffect Car ride\nTRANSPORT_CABLE_CAR_COCHABAMB\npar
+    character & monster\npar Ma\xEBl Valin\n\nEffect Car ride\nTRANSPORT_CABLE_CAR_COCHABAMB\npar
     keng-wai-chane-chick-te \n\nGunshot.ogg\npar wesleyextreme_gamer\n\n<SIZE=80>-FONT-</SIZE>\n\nBaumans\nSyneMono\n\n\n\n\n<SIZE=120>MERCI</SIZE>\n"
 --- !u!222 &1536180499
 CanvasRenderer:
