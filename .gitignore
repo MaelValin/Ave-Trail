@@ -7,7 +7,6 @@
 Library/
 Temp/
 Obj/
-Build/
 Builds/
 Logs/
 MemoryCaptures/
@@ -46,6 +45,5 @@ Thumbs.db
 sysinfo.txt
 
 # === Build export folders ===
-
-builds/
 buildMac/
+Builds/
