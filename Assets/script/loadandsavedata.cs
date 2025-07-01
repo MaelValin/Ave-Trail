@@ -87,8 +87,8 @@ foreach (BatimentAmelioration bat in FindObjectsOfType<BatimentAmelioration>())
     if (Inventaire.instance != null)
     {
         // Additionne les gains de mission et l'inventaire du village
-        int totalArgent = PlayerPrefs.GetInt("argent", 0) + PlayerPrefs.GetInt("argentInventaire", 1000);
-        int totalNourriture = PlayerPrefs.GetInt("nourriture", 0) + PlayerPrefs.GetInt("nourritureInventaire", 1000);
+        int totalArgent = PlayerPrefs.GetInt("argent", 0) + PlayerPrefs.GetInt("argentInventaire", 0);
+        int totalNourriture = PlayerPrefs.GetInt("nourriture", 0) + PlayerPrefs.GetInt("nourritureInventaire", 0);
         
 
         Inventaire.instance.ArgentQuantity = totalArgent;
