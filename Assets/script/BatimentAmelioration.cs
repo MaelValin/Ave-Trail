@@ -357,7 +357,7 @@ public class BatimentAmelioration : MonoBehaviour
         PlayerPrefs.SetString(batimentID + "_niveau", niveau);
         PlayerPrefs.SetString(batimentID + "_amelioration", ameliorationchoisi);
     
-        //Debug.Log("Données du bâtiment sauvegardées pour " + batimentID + ": Niveau " + niveau + ", Amélioration " + ameliorationchoisi);
+        Debug.Log("Données du bâtiment sauvegardées pour " + batimentID + ": Niveau " + niveau + ", Amélioration " + ameliorationchoisi);
 
     }
 

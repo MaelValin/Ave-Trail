@@ -11,6 +11,7 @@ public class ModManager : MonoBehaviour
    
 
     private void Awake(){
+        
 
         if(instance != null){
             Debug.LogWarning("Il y a plus d'une instance de ModManager dans la scène");

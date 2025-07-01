@@ -63,13 +63,13 @@ public class shootplayer : MonoBehaviour
             shootplayer.instance.typeBalle="balle";
         }
         else if(PlayerPrefs.GetString("cabane_amelioration") == "1"){
-            shootplayer.instance.typeBalle="explosif";
-        }
-        else if(PlayerPrefs.GetString("cabane_amelioration") == "2"){
             shootplayer.instance.typeBalle="ricochet";
         }
-        else if(PlayerPrefs.GetString("cabane_amelioration") == "3"){
+        else if(PlayerPrefs.GetString("cabane_amelioration") == "2"){
             shootplayer.instance.typeBalle="lanceflam";
+        }
+        else if(PlayerPrefs.GetString("cabane_amelioration") == "3"){
+            shootplayer.instance.typeBalle="explosif";
         }
     }
 
@@ -203,7 +203,8 @@ public class shootplayer : MonoBehaviour
         lanceflamActif = true;
                 
 
-
+        PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
+playerMovement.peutBouger = false;
         Vector3 mouseScreenPosition = Input.mousePosition;
         Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseScreenPosition);
         Vector2 direction = (mouseWorldPosition - firePoint.position).normalized;
@@ -215,6 +216,8 @@ public class shootplayer : MonoBehaviour
     void DesactiverRayon()
     {
         lanceflamActif = false;
+        PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
+playerMovement.peutBouger = true;// Réactive le mouvement du joueur après le tir
         if (rayonActif != null)
             Destroy(rayonActif);
     }

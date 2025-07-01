@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     public bool carcollider = false;
 
     public bool click = false;
+    public bool peutBouger = true;
     
 
     private void Awake()
@@ -79,6 +80,10 @@ private void Start()
 
     void Update()
     {
+        if (!peutBouger)
+            return;
+
+            
         if(carcollider == true && Input.GetKey(KeyCode.E))
         {
             StartCoroutine(winner());
