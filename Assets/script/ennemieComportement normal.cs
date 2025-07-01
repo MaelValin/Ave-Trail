@@ -128,7 +128,7 @@ else
             if (bulletScript != null)
                 {
                     life -= bulletScript.degat;
-                    Debug.Log("Life after bullet hit: " + life);
+                    
                 }
                 if (life <= 0)
                 {
@@ -227,7 +227,7 @@ private void OnTriggerStay2D(Collider2D collision)
     yield return new WaitForSeconds(2f); // Attendre la durée de l'animation de mort
         spriteRenderer.sortingOrder = -1;
 
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(5f);
         Destroy(gameObject); // Détruire l'objet après la mort
 
 

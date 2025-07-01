@@ -30,7 +30,7 @@ public class ManagerScene : MonoBehaviour
     public Text[] NumberBalle;
     public Image[] visage;
 
-    public Text[] difficulte;
+    
 
      private Coroutine decreaseCoroutine;
 
@@ -97,27 +97,7 @@ public class ManagerScene : MonoBehaviour
             interacttext.text = "Rejoindre la voiture et rentrez avec la touche E";
         }
 
-        if(ModManager.instance.Mod == "facile")
-        {
-            foreach (Text t in difficulte)
-            {
-                t.text = "Facile";
-            }
-        }
-        else if(ModManager.instance.Mod == "moyen")
-        {
-            foreach (Text t in difficulte)
-            {
-                t.text = "Moyen";
-        }
-        }
-        else if(ModManager.instance.Mod == "difficile")
-        {
-            foreach (Text t in difficulte)
-            {
-                t.text = "Difficile";
-            }
-        }
+        
     }
     
 

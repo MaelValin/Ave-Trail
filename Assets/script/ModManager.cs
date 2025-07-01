@@ -61,13 +61,13 @@ public class ModManager : MonoBehaviour
             shootplayer.instance.typeBalle="balle";
         }
         else if(PlayerPrefs.GetString("cabane_amelioration") == "1"){
-            shootplayer.instance.typeBalle="explosif";
-        }
-        else if(PlayerPrefs.GetString("cabane_amelioration") == "2"){
             shootplayer.instance.typeBalle="ricochet";
         }
-        else if(PlayerPrefs.GetString("cabane_amelioration") == "3"){
+        else if(PlayerPrefs.GetString("cabane_amelioration") == "2"){
             shootplayer.instance.typeBalle="lanceflam";
+        }
+        else if(PlayerPrefs.GetString("cabane_amelioration") == "3"){
+            shootplayer.instance.typeBalle="explosif";
         }
 
 

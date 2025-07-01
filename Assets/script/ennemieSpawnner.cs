@@ -60,7 +60,7 @@ public class ennemieSpawnner : MonoBehaviour
         }
         else if(ModManager.instance.Mod == "difficile")
         {
-            spawnInterval = 2.0f; // Intervalle de spawn pour le mode difficile
+            spawnInterval = 1.5f; // Intervalle de spawn pour le mode difficile
             enemyNormal = enemyNormalBunker;
             enemyRapide = enemyRapideBunker;
             enemyLourd = enemyLourdBunker;
@@ -80,9 +80,9 @@ public class ennemieSpawnner : MonoBehaviour
 
         if(ModManager.instance.Mod == "facile")
           {
-            if (rand < 0.7f)
+            if (rand < 0.8f)
                         prefabToSpawn = enemyNormal;      // 70%
-                    else if (rand < 0.9f)
+                    else if (rand < 0.95f)
                         prefabToSpawn = enemyRapide;      // 20%
                     else
                         prefabToSpawn = enemyLourd;       // 10%
@@ -126,7 +126,7 @@ public class ennemieSpawnner : MonoBehaviour
     
   public void UpdateSpawnInterval(float newInterval)
 {
-    spawnInterval = Mathf.Max(newInterval, 0.01f); // Valeur minimale de sécurité
+    spawnInterval = Mathf.Max(newInterval, 0.1f); // Valeur minimale de sécurité
     CancelInvoke(nameof(SpawnEnemy));
     if (spawnInterval > 0.1f)
         InvokeRepeating(nameof(SpawnEnemy), spawnInterval, spawnInterval);

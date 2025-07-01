@@ -102,6 +102,7 @@ public class shootcar : MonoBehaviour
             // Crée la balle et la configure
             GameObject bullet = Instantiate(bulletPrefab, playerPosition, Quaternion.Euler(0, 0, angle));
             bullet.GetComponent<tirplayer>().degat = degat;
+            bullet.GetComponent<tirplayer>().typeBalle="balle";
             currentreload=0;
             Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), car.GetComponent<Collider2D>());
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();

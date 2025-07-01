@@ -190,6 +190,8 @@ private void OnTriggerEnter2D(Collider2D collision)
 
     yield return new WaitForSeconds(3f); // Attendre la durée de l'animation de mort
         spriteRenderer.sortingOrder = -1;
+        yield return new WaitForSeconds(2f); // Attendre avant de détruire l'ennemi
+        Destroy(gameObject); // Détruire l'ennemi
         
     }
 

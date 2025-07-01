@@ -47,6 +47,47 @@ public class VaccinManager : MonoBehaviour
             instance = this;
         }
 
+        if(PlayerPrefs.GetString("four") == "four1")
+        {
+            four1.SetActive(true);
+            four2.SetActive(false);
+            four3.SetActive(false);
+            four4.SetActive(false);
+            four5.SetActive(false);
+        }
+        else if (PlayerPrefs.GetString("four") == "four2")
+        {
+            four1.SetActive(false);
+            four2.SetActive(true);
+            four3.SetActive(false);
+            four4.SetActive(false);
+            four5.SetActive(false);
+        }
+        else if (PlayerPrefs.GetString("four") == "four3")
+        {
+            four1.SetActive(false);
+            four2.SetActive(false);
+            four3.SetActive(true);
+            four4.SetActive(false);
+            four5.SetActive(false);
+        }
+        else if (PlayerPrefs.GetString("four") == "four4")
+        {
+            four1.SetActive(false);
+            four2.SetActive(false);
+            four3.SetActive(false);
+            four4.SetActive(true);
+            four5.SetActive(false);
+        }
+        else if (PlayerPrefs.GetString("four") == "four5")
+        {
+            four1.SetActive(false);
+            four2.SetActive(false);
+            four3.SetActive(false);
+            four4.SetActive(false);
+            four5.SetActive(true);
+        }
+
         
     }
 
@@ -129,24 +170,31 @@ public class VaccinManager : MonoBehaviour
     {
         Destroy(four4);
         four5.SetActive(true);
+        PlayerPrefs.SetString("four", "four5");
     }
     else if(currentnourriture > maxnourriture * 3f/5f && currentargent > maxargent * 3f/5f)
     {
         
         Destroy(four3);
         four4.SetActive(true);
+        PlayerPrefs.SetString("four", "four4");
     }
     else if(currentnourriture > maxnourriture * 2f/5f && currentargent > maxargent * 2f/5f)
     {
         
         Destroy(four2);
         four3.SetActive(true);
+        PlayerPrefs.SetString("four", "four3");
     }
     else if(currentnourriture > maxnourriture * 1f/5f && currentargent > maxargent * 1f/5f)
     {
         
         Destroy(four1);
         four2.SetActive(true);
+        PlayerPrefs.SetString("four", "four2");
+    }
+    else{
+        PlayerPrefs.SetString("four", "four1");
     }
         
     }

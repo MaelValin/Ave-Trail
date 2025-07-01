@@ -68,6 +68,7 @@ public class LoadAndSaveData : MonoBehaviour
     }
    PlayerPrefs.SetInt("argent", 0);
 PlayerPrefs.SetInt("nourriture", 0);
+Debug.Log(PlayerPrefs.GetInt("ballesInventaire", 10));
 
 // Sauvegarder tous les bâtiments
 foreach (BatimentAmelioration bat in FindObjectsOfType<BatimentAmelioration>())
@@ -86,8 +87,8 @@ foreach (BatimentAmelioration bat in FindObjectsOfType<BatimentAmelioration>())
     if (Inventaire.instance != null)
     {
         // Additionne les gains de mission et l'inventaire du village
-        int totalArgent = PlayerPrefs.GetInt("argent", 0) + PlayerPrefs.GetInt("argentInventaire", 0);
-        int totalNourriture = PlayerPrefs.GetInt("nourriture", 0) + PlayerPrefs.GetInt("nourritureInventaire", 0);
+        int totalArgent = PlayerPrefs.GetInt("argent", 0) + PlayerPrefs.GetInt("argentInventaire", 1000);
+        int totalNourriture = PlayerPrefs.GetInt("nourriture", 0) + PlayerPrefs.GetInt("nourritureInventaire", 1000);
         
 
         Inventaire.instance.ArgentQuantity = totalArgent;
@@ -104,11 +105,13 @@ foreach (BatimentAmelioration bat in FindObjectsOfType<BatimentAmelioration>())
 
     }
 
+    
 
     
         foreach (BatimentAmelioration bat in FindObjectsOfType<BatimentAmelioration>())
 {
     bat.LoadBatiment();
+    
 }
 
     
@@ -128,7 +131,7 @@ foreach (BatimentAmelioration bat in FindObjectsOfType<BatimentAmelioration>())
 
     public void LoadDataGame()
     {
-        NumberBalle.instance.nombreBalle= PlayerPrefs.GetInt("ballesInventaire", 0);
+        NumberBalle.instance.nombreBalle= PlayerPrefs.GetInt("ballesInventaire", 10);
         ModManager.instance.Mod = PlayerPrefs.GetString("difficulty", "facile");
     }
 }

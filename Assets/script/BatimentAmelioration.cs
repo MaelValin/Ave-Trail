@@ -357,7 +357,7 @@ public class BatimentAmelioration : MonoBehaviour
         PlayerPrefs.SetString(batimentID + "_niveau", niveau);
         PlayerPrefs.SetString(batimentID + "_amelioration", ameliorationchoisi);
     
-        Debug.Log("Données du bâtiment sauvegardées pour " + batimentID + ": Niveau " + niveau + ", Amélioration " + ameliorationchoisi);
+        //Debug.Log("Données du bâtiment sauvegardées pour " + batimentID + ": Niveau " + niveau + ", Amélioration " + ameliorationchoisi);
 
     }
 
@@ -435,8 +435,7 @@ public class BatimentAmelioration : MonoBehaviour
             sprite.sprite = niveau1;
         }
 
-            Amelioration2.interactable = true;
-            fondbloquerAmelioration2.SetActive(false);
+           
             
             ColorBlock cb = batimentButton.colors;
         cb.normalColor = new Color(0.89f, 0.89f, 0.89f, 1f); // E4E4E4
@@ -455,8 +454,10 @@ public class BatimentAmelioration : MonoBehaviour
             sprite.sprite = niveau2;
         }
 
-            Amelioration3.interactable = true;
-            fondbloquerAmelioration3.SetActive(false);
+            
+
+             Amelioration2.interactable = true;
+            fondbloquerAmelioration2.SetActive(false);
             
             ColorBlock cb = batimentButton.colors;
         cb.normalColor = new Color(0.89f, 0.89f, 0.89f, 1f); // E4E4E4

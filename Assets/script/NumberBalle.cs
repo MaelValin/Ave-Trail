@@ -7,6 +7,7 @@ public class NumberBalle : MonoBehaviour
 
     public int nombreBalle = 10; // Nombre de balles à afficher
     public Text Textvalue; 
+    
 
 
  private void Awake()
@@ -20,13 +21,15 @@ public class NumberBalle : MonoBehaviour
         {
             instance = this;
         }
+       
 
-        nombreBalle= PlayerPrefs.GetInt("ballesInventaire", 10);
+        //nombreBalle= PlayerPrefs.GetInt("ballesInventaire", 10);
     }
 
-    
+    string typeBalle;
     void Start()
     {
+       
         // Assurez-vous que Textvalue est assigné dans l'inspecteur ou via code
         if (Textvalue == null)
         {
@@ -44,7 +47,14 @@ public class NumberBalle : MonoBehaviour
     }
 
     public void RetireBalle(){
-        nombreBalle -= 1; // Retire une balle
+        
+        typeBalle = shootplayer.instance.typeBalle; // Récupère le type de balle depuis l'instance de shootplayer
+        if(typeBalle == "explosif"){
+        nombreBalle -= 5; // Retire une balle
+        }
+        else{
+        nombreBalle -= 1; // Retire deux balles pour les autres types
+        }
         Textvalue.text = nombreBalle.ToString(); // Met à jour le texte affiché
     }
 }

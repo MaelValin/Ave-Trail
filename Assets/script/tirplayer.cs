@@ -11,7 +11,7 @@ public class tirplayer : MonoBehaviour
     public BoxCollider2D BoxCollider;
     public int degat = 10; // Dégâts infligés par la balle
     public int richochetCount = 0; // Nombre de ricochets
-    string typeBalle;
+    public string typeBalle;
     public bool isPlayerBullet = false;
 
     
