@@ -22,8 +22,8 @@ public class NumberBalle : MonoBehaviour
             instance = this;
         }
        
-
-        //nombreBalle= PlayerPrefs.GetInt("ballesInventaire", 10);
+    nombreBalle= PlayerPrefs.GetInt("ballesInventaire", 10);
+        
     }
 
     string typeBalle;
