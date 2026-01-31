@@ -21,5 +21,5 @@
 
 1. Cloner le dépôt :
 ```bash
-git clone https://github.com/MaelValin/Ave-Trail/tree/main/build
+git clone https://github.com/AaronWalker19/Ave-Trail/tree/main/build
 
